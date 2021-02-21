@@ -9,6 +9,7 @@ gem 'jbuilder'
 gem 'lamby', require: false
 gem 'webpacker'
 gem 'sass-rails'
+gem 'nanoid'
 
 group :development do
   gem 'web-console'
