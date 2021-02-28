@@ -10,6 +10,8 @@ gem 'lamby', require: false
 gem 'webpacker'
 gem 'sass-rails'
 gem 'nanoid'
+gem 'aws-record', '~> 2.0' # https://github.com/aws/aws-sdk-ruby-record
+
 
 group :development do
   gem 'web-console'
