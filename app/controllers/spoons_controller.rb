@@ -3,8 +3,6 @@ class SpoonsController < ApplicationController
     nan_pk = Nanoid.generate
     nan_sk = Nanoid.generate
 
-    local_client = Aws::DynamoDB::Client.new(region: 'local', endpoint: 'http://localhost:8000')
-    Spoon.configure_client(client: local_client)
     item = Spoon.new(pk: nan_pk,
                      sk: nan_sk,
                      type: 'spoon',

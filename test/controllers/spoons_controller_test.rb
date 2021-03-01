@@ -1,10 +1,7 @@
 require 'test_helper'
 
 class SpoonsControllerTest < ActionDispatch::IntegrationTest
-  test 'the truth' do
-    local_client = Aws::DynamoDB::Client.new(region: 'local', endpoint: 'http://localhost:8000')
-
-    Spoon.configure_client(client: local_client)
+  test 'root path adds another spoon' do
     before = Spoon.scan.each.count
     get root_path
     after = Spoon.scan.each.count
