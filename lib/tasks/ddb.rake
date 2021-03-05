@@ -26,6 +26,7 @@ namespace :ddb do
     migration = Aws::Record::TableMigration.new(Spoon, client: local_client)
 
     migration.create!(
+      # billing_mode: "PAY_PER_REQUEST" # possible with these migrations
       provisioned_throughput: {
         read_capacity_units: 5,
         write_capacity_units: 2
