@@ -1,3 +1,7 @@
+Live URLs
+
+1. https://l6t06l9nta.execute-api.us-east-1.amazonaws.com/production/
+2. https://l6t06l9nta.execute-api.us-east-1.amazonaws.com/production/graphql
 
 # RorUrl
 
