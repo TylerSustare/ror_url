@@ -7,7 +7,7 @@ class Mutations::CreateSpoon < Mutations::BaseMutation
 
   def resolve(type:, active:)
     nan_pk = Nanoid.generate
-    nan_sk = Nanoid.generate
+    nan_sk = SecureRandom.uuid
 
     spoon = Spoon.new(
       pk: nan_pk,

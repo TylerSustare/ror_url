@@ -7,9 +7,11 @@ gem 'aws-record', '~> 2.0' # https://github.com/aws/aws-sdk-ruby-record
 gem 'aws-sdk-ssm'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'graphql'
+gem 'graphiql-rails'
 gem 'jbuilder'
 gem 'lamby', require: false
 gem 'nanoid'
+gem 'rack-cors'
 gem 'sass-rails'
 gem 'webpacker'
 
@@ -19,7 +21,6 @@ end
 
 group :development, :test do
   gem 'byebug'
-  gem 'graphiql-rails'
 end
 
 group :test do
@@ -31,5 +32,3 @@ end
 group :production do
   gem 'lograge'
 end
-
-gem 'graphiql-rails', group: :development
